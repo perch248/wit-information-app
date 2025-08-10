@@ -1,0 +1,118 @@
+/* welcome.css — modern responsive design */
+:root {
+  --primary: #005bbb;
+  --primary-dark: #004999;
+  --bg: #f4f7fa;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --radius: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.site-header {
+  background: var(--primary);
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.site-header .tagline {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #dceafe;
+}
+
+.intro {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 1.2rem;
+}
+
+.schools {
+  background: white;
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.schools h2 {
+  color: var(--primary-dark);
+  margin-top: 0;
+}
+
+.school-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.school-list li {
+  background: var(--bg);
+  padding: 10px;
+  border-radius: var(--radius);
+}
+
+.contact {
+  background: white;
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.contact h2 {
+  color: var(--primary-dark);
+  margin-top: 0;
+}
+
+.contact a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  background: var(--primary-dark);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .site-header h1 {
+    font-size: 1.5rem;
+  }
+  .intro {
+    font-size: 1rem;
+  }
+}
